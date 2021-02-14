@@ -1,15 +1,11 @@
 /* Another way:
 const Content = (props) => <p>{props.part} {props.exercises}</p>
 */
+import Part from './Part.js'
 
-
-const Content = (props) => {
-
-    
+const Content = (props) => {    
     return (
-            <p>
-                {props.part} {props.exercises}
-            </p>
+        <Part part={props.part} exercises={props.exercises} />
     );
 }
 
